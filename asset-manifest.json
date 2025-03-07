@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/jerichomc/taskManager/static/css/main.1a0fac80.css",
+    "main.js": "/jerichomc/taskManager/static/js/main.62625c6f.js",
+    "index.html": "/jerichomc/taskManager/index.html",
+    "main.1a0fac80.css.map": "/jerichomc/taskManager/static/css/main.1a0fac80.css.map",
+    "main.62625c6f.js.map": "/jerichomc/taskManager/static/js/main.62625c6f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a0fac80.css",
+    "static/js/main.62625c6f.js"
+  ]
+}
