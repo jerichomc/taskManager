@@ -42,9 +42,21 @@ function App() {
 
   // Function to delete a task with animation
   const deleteTask = (id) => {
+    // Set deleting state
     setDeletingTaskId(id);
+    
+    // Delay to match the animation
     setTimeout(() => {
-      setTasks(tasks.filter((task) => task.id !== id)); // Remove task from state after animation
+      // Remove task from the tasks array
+      const updatedTasks = tasks.filter((task) => task.id !== id);
+  
+      // Update the tasks state with the remaining tasks
+      setTasks(updatedTasks);
+  
+      // Save the updated tasks to localStorage
+      localStorage.setItem("tasks", JSON.stringify(updatedTasks));
+  
+      // Reset the deleting state
       setDeletingTaskId(null);
     }, 300); // Delay to match fade-out animation time
   };
